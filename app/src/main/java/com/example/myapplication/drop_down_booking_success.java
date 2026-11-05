@@ -15,6 +15,8 @@ public class drop_down_booking_success extends AppCompatActivity {
     private Button homebtn;
     private Button profilebutton;
     private Button requestsBtn;
+    private Button pendingrequestsbtn;
+    private Button logoutbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +32,24 @@ public class drop_down_booking_success extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(drop_down_booking_success.this, employee_home_screen.class);
+                startActivity(intent);
+            }
+        });
+
+        pendingrequestsbtn = findViewById(R.id.pending_requests);
+        pendingrequestsbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(drop_down_booking_success.this, booking_requests.class);
+                startActivity(intent);
+            }
+        });
+
+        logoutbtn = findViewById(R.id.logout);
+        logoutbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(drop_down_booking_success.this, logout_msg.class);
                 startActivity(intent);
             }
         });

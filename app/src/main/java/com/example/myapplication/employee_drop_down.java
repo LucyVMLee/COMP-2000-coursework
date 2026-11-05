@@ -14,7 +14,9 @@ import android.content.Intent;
 public class employee_drop_down extends AppCompatActivity {
     private Button profilebutton;
 
-
+    private Button homebtn;
+    private Button pendingrequestsbtn;
+    private Button logoutbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,32 @@ public class employee_drop_down extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+        homebtn = findViewById(R.id.homebtn);
+        homebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(employee_drop_down.this, employee_home_screen.class);
+                startActivity(intent);
+            }
+        });
+
+        pendingrequestsbtn = findViewById(R.id.pending_requests);
+        pendingrequestsbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(employee_drop_down.this, booking_requests.class);
+                startActivity(intent);
+            }
+        });
+
+        logoutbtn = findViewById(R.id.logout);
+        logoutbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(employee_drop_down.this, logout_msg.class);
+                startActivity(intent);
+            }
         });
         profilebutton = findViewById(R.id.profilebutton);
         profilebutton.setOnClickListener(new View.OnClickListener() {

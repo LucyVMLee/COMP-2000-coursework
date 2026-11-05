@@ -15,6 +15,9 @@ public class drop_down_confirm_booking extends AppCompatActivity {
     private Button changeBtn;
     private Button confirmBtn;
     private Button profilebtn;
+    private Button homebtn;
+    private Button pendingrequestsbtn;
+    private Button logoutbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +27,32 @@ public class drop_down_confirm_booking extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+        homebtn = findViewById(R.id.homebtn);
+        homebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(drop_down_confirm_booking.this, employee_home_screen.class);
+                startActivity(intent);
+            }
+        });
+
+        pendingrequestsbtn = findViewById(R.id.pending_requests);
+        pendingrequestsbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(drop_down_confirm_booking.this, booking_requests.class);
+                startActivity(intent);
+            }
+        });
+
+        logoutbtn = findViewById(R.id.logout);
+        logoutbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(drop_down_confirm_booking.this, logout_msg.class);
+                startActivity(intent);
+            }
         });
         changeBtn = findViewById(R.id.change_booking);
         changeBtn.setOnClickListener(new View.OnClickListener() {

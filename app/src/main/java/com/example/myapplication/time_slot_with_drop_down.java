@@ -22,6 +22,9 @@ public class time_slot_with_drop_down extends AppCompatActivity {
 
     private Button profileBtn;
     private Button  custombtn;
+    private Button homebtn;
+    private Button pendingrequestsbtn;
+    private Button logoutbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +34,32 @@ public class time_slot_with_drop_down extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+        homebtn = findViewById(R.id.homebtn);
+        homebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(time_slot_with_drop_down.this, employee_home_screen.class);
+                startActivity(intent);
+            }
+        });
+
+        pendingrequestsbtn = findViewById(R.id.pending_requests);
+        pendingrequestsbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(time_slot_with_drop_down.this, booking_requests.class);
+                startActivity(intent);
+            }
+        });
+
+        logoutbtn = findViewById(R.id.logout);
+        logoutbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(time_slot_with_drop_down.this, logout_msg.class);
+                startActivity(intent);
+            }
         });
         profileBtn = findViewById(R.id.profilebutton);
         profileBtn.setOnClickListener(new View.OnClickListener() {
