@@ -22,7 +22,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingBottom="50dp">
             <com.google.android.material.navigation.NavigationView
                 android:id="@+id/navigationView"
                 android:layout_width="match_parent"
@@ -49,7 +51,7 @@
                     <TextView
                         android:layout_width="50dp"
                         android:layout_height="61dp"
-                        android:layout_marginLeft="15dp"
+                        android:layout_marginLeft="30dp"
                         android:layout_marginTop="0dp"
                         android:text="Logo"
                         android:textSize="20dp" />
@@ -58,7 +60,7 @@
                         android:id="@+id/textView"
                         android:layout_width="500dp"
                         android:layout_height="60dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginLeft="90dp"
                         android:layout_marginTop="0dp"
                         android:layout_marginRight="15dp"
                         android:background="@color/white"
@@ -73,7 +75,7 @@
 
                     <Button
                         android:id="@+id/button2"
-                        android:layout_width="0dp"
+                        android:layout_width="30dp"
                         android:layout_height="44dp"
                         android:layout_marginLeft="0dp"
                         android:layout_marginTop="0dp"
@@ -118,7 +120,7 @@
                             android:id="@+id/button63"
                             android:layout_width="57dp"
                             android:layout_height="34dp"
-                            android:layout_marginLeft="190dp"
+                            android:layout_marginLeft="220dp"
                             android:layout_marginRight="30dp"
                             android:backgroundTint="@color/white"
                             android:padding="0dp"
@@ -151,11 +153,55 @@
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="185dp">
                         <TextView
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="Mon"/>
+                            android:text="Mon"
+                            android:textSize="18dp"
+                            android:layout_marginRight="15dp"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:text="Tues"
+                            android:textSize="18dp"
+                            android:layout_marginRight="15dp"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:text="Wed"
+                            android:textSize="18dp"
+                            android:layout_marginRight="15dp"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:text="Thurs"
+                            android:textSize="18dp"
+                            android:layout_marginRight="15dp"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:text="Fri"
+                            android:textSize="18dp"
+                            android:layout_marginRight="15dp"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:text="Sat"
+                            android:textSize="18dp"/>
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:text="Sun"
+                            android:textSize="18dp"
+                            android:layout_marginRight="15dp"
+                            android:textAlignment="center"/>
                     </LinearLayout>
                     <androidx.gridlayout.widget.GridLayout
                         android:id="@+id/gridLayout"
@@ -163,7 +209,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
                         android:layout_marginBottom="206dp"
-                        android:layout_marginLeft="140dp"
+                        android:layout_marginLeft="180dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"

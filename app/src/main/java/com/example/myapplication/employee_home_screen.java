@@ -170,8 +170,8 @@ public class employee_home_screen extends AppCompatActivity {
         }else{
             workwithButton.setBackgroundTintList(custom);
         }
-        Intent intent = new Intent(employee_home_screen.this, time_slot.class);
-        startActivity(intent);
+        Intent timeintent = new Intent(employee_home_screen.this, time_slot.class);
+        startActivity(timeintent);
 
     }
 }
