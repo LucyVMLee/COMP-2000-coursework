@@ -34,30 +34,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void boldenMe(View view){
-        int ID = view.getId();
-        Button workwithButton = findViewById(R.id.button6);
-        Button b1 = findViewById(R.id.button6);
-        Button b2 = findViewById(R.id.button7);
-        Button b3 = findViewById(R.id.button8);
-        if(ID == b1.getId()) {
-            workwithButton = b1;
-        }else if (ID== b2.getId()) {
-            workwithButton = b2;
-        }else if(ID == b3.getId()){
-            workwithButton = b3;
-        }
-        //final Button button=findViewById(R.id.);
-        ColorStateList custom = getResources().getColorStateList(R.color.pearly_pink);
 
-        ColorStateList original = getResources().getColorStateList(R.color.original_purple);
-        if(workwithButton.getBackgroundTintList()== custom){
-            workwithButton.setBackgroundTintList(original);
-        }else{
-            workwithButton.setBackgroundTintList(custom);
-        }
-
-    }
 
 
 }

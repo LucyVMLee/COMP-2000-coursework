@@ -12,7 +12,15 @@ import androidx.core.view.WindowInsetsCompat;
 import android.content.Intent;
 
 public class time_slot extends AppCompatActivity {
+    private Button btn9am;
+    private Button btn11am;
+    private Button btn1pm;
+    private Button btn3pm;
+    private Button btn5pm;
 
+
+    private Button profileBtn;
+    private Button  custombtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +32,65 @@ public class time_slot extends AppCompatActivity {
             return insets;
         });
 
+        profileBtn = findViewById(R.id.profilebutton);
+        profileBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent profileIntent = new Intent(time_slot.this, time_slot_with_drop_down.class);
+                startActivity(profileIntent);
+            }
+        });
 
+
+
+        btn9am = findViewById(R.id.btn9am);
+        btn9am.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(time_slot.this, book_a_room.class);
+                startActivity(intent);
+            }
+        });
+        btn11am = findViewById(R.id.btn11am);
+        btn11am.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(time_slot.this, book_a_room.class);
+                startActivity(intent);
+            }
+        });
+        btn1pm = findViewById(R.id.btn1pm);
+        btn1pm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(time_slot.this, book_a_room.class);
+                startActivity(intent);
+            }
+        });
+        btn3pm = findViewById(R.id.btn3pm);
+        btn3pm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(time_slot.this, book_a_room.class);
+                startActivity(intent);
+            }
+        });
+        btn5pm = findViewById(R.id.btn5pm);
+        btn5pm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(time_slot.this, book_a_room.class);
+                startActivity(intent);
+            }
+        });
+        custombtn = findViewById(R.id.custom);
+        custombtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(time_slot.this, book_a_room.class);
+                startActivity(intent);
+            }
+        });
 
     }
     public void boldenMe(View view){

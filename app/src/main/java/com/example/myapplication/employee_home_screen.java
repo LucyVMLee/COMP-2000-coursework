@@ -12,7 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 import android.content.Intent;
 
 public class employee_home_screen extends AppCompatActivity {
-
+    private Button profilebutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +23,14 @@ public class employee_home_screen extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
+        profilebutton = findViewById(R.id.profilebutton_main);
+        profilebutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent profileintent = new Intent(employee_home_screen.this, employee_drop_down.class);
+                startActivity(profileintent);
+            }
+        });
 
 
     }
