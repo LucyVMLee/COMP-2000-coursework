@@ -21,6 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".employee_login_screen"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".employee_home_screen"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".time_slot"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+
     </application>
 
 </manifest>

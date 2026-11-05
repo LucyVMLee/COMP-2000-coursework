@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/employee_login_screen"
+    android:layout_height="match_parent"
+    android:backgroundTint="#03A9F4"
+    android:foregroundTint="#03A9F4"
+    app:barrierMargin="10dp">
+
+
+    <ScrollView
+        android:layout_width="729dp"
+        android:layout_height="409dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="25dp">
+
+                <TextView
+                    android:id="@+id/CompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:background="@color/white"
+                    android:paddingTop="10px"
+                    android:text="CompanyName"
+                    android:textAlignment="center"
+                    android:textColor="@color/corporate_blue"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/companynameline"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+                <TextView
+                    android:id="@+id/companynameline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:height="20dp"
+                    android:background="@color/corporate_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <Button
+                    android:id="@+id/backbtn"
+                    android:layout_width="62dp"
+                    android:layout_height="72dp"
+
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="139dp"
+                    android:padding="0dp"
+
+                    android:paddingTop="10dp"
+                    android:text="↩︎"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="200dp"
+                    android:text="Employee"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:id="@+id/usernamelbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="50dp"
+                android:text="Username"
+                android:textSize="20dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout2"
+                android:layout_width="219dp"
+                android:layout_height="67dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+               >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="213dp"
+                    android:layout_height="56dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp">
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginRight="50dp"
+                    android:text="Password"
+                    android:textSize="20dp"
+
+                    />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout3"
+                android:layout_width="213dp"
+                android:layout_height="56dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="20dp"
+                android:paddingBottom="60dp">
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="232dp"
+                android:layout_height="125dp"
+                android:text="Login"
+                android:textSize="30dp"
+                android:layout_marginLeft="200dp"
+                 />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
