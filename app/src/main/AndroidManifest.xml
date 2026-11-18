@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".employee_login_screen"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".employee_home_screen"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".time_slot"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".employee_drop_down"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".logout_msg"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".book_a_room"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".confirm_booking_request"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".time_slot_with_drop_down"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".drop_down_book_a_room"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".drop_down_confirm_booking"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".booking_successful"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".drop_down_booking_success"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".booking_requests"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".drop_down_booking_requests"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".confirm_delete_request"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".drop_down_confirm_delete_request"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+
+    </application>
+
+</manifest>
