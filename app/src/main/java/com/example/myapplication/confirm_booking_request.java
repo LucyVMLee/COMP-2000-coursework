@@ -10,6 +10,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import android.content.Intent;
+import android.widget.PopupMenu;
+import android.view.MenuItem;
 
 public class confirm_booking_request extends AppCompatActivity {
     private Button changeBtn;
@@ -43,13 +45,32 @@ public class confirm_booking_request extends AppCompatActivity {
             }
         });
         profilebtn = findViewById(R.id.profilebutton);
-        profilebtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(confirm_booking_request.this, drop_down_confirm_booking.class);
-                startActivity(intent);
-            }
+        profilebtn.setOnClickListener(v ->{
+            PopupMenu popup = new PopupMenu(this, v);
+            popup.getMenuInflater().inflate(R.menu.user_menu, popup.getMenu());
+            popup.setOnMenuItemClickListener(item -> onOptionsItemsSelected(item));
+            popup.show();
+
         });
 
 
-    }}
+    }
+    public boolean onOptionsItemsSelected(MenuItem item){
+        if(item.getItemId() == R.id.homebtn){
+            Intent intent = new Intent(this, employee_home_screen.class);
+            startActivity(intent);
+            return true;
+        }else if(item.getItemId() == R.id.pending_requests){
+            Intent intent = new Intent(this, booking_requests.class);
+            startActivity(intent);
+            return true;
+        }else if(item.getItemId() == R.id.logoutbtn){
+            Intent intent = new Intent(this, logout_msg.class);
+            startActivity(intent);
+            return true;
+        }
+        else{
+            return true;
+        }
+    }
+}
