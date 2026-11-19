@@ -45,6 +45,7 @@ public class confirm_delete_request extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         profilebtn = findViewById(R.id.profilebutton_main);
         profilebtn.setOnClickListener(v ->{
             PopupMenu popup = new PopupMenu(this, v);

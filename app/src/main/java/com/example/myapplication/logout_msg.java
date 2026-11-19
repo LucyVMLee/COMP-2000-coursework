@@ -13,6 +13,7 @@ import android.content.Intent;
 
 public class logout_msg extends AppCompatActivity {
     private Button button_to_main_home_page;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
