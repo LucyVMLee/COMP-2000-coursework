@@ -55,7 +55,6 @@ public class booking_requests extends AppCompatActivity {
             }
         });
     }
-
     public boolean onOptionsItemsSelected(MenuItem item){
         if(item.getItemId() == R.id.homebtn){
             Intent intent = new Intent(this, employee_home_screen.class);

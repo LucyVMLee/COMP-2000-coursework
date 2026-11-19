@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dd_my_bookings">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="921dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.navigation.NavigationView
+                android:id="@+id/navigationView"
+                android:layout_width="414dp"
+                android:layout_height="113dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="60dp"
+                    android:width="420dp"
+                    android:height="70dp"
+                    android:background="@color/corporate_blue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="61dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="0dp"
+                        android:text="Logo"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@color/white"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="10px"
+                        android:text="CompanyName"
+                        android:textAlignment="center"
+                        android:textColor="@color/corporate_blue"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/profilebutton"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_weight="1"
+                        android:text="Profile" />
+
+
+                </LinearLayout>
+
+            </com.google.android.material.navigation.NavigationView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#B4D7F0"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#B4D7F0"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:text="Employee"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/homebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#B4D7F0"
+                    android:text="Home"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/pending_requests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#B4D7F0"
+                    android:text="View pending requests"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+
+
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#B4D7F0"
+                    android:text="Logout"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My bookings"
+                    android:textSize="30dp"
+                    android:textAlignment="center"
+                    android:paddingBottom="30dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="150dp"
+                        android:text="Meeting room 3  - 29/01/27 at 11am
+Status: Pending"
+                        android:textSize="28dp"
+                        android:paddingLeft="30dp"/>
+                    <Button
+                        android:id="@+id/deletebtn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:textSize="25dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:layout_marginTop="30dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="150dp"
+                        android:text="Seminar room 1 - 15/11/26 at 9am  Status: Approved"
+                        android:textSize="28dp"
+                        android:paddingLeft="30dp"/>
+                    <Button
+                        android:id="@+id/deletebtn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:textSize="25dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:layout_marginTop="30dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
