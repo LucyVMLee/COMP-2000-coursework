@@ -4,5 +4,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="pearly_pink">#F4BAE2</color>
     <color name = "original_purple">#673AB7</color>
-    <color name = "corporate_blue">#3F51B5</color>
+    <color name = "corporate_blue">#1F7A8C</color>
+    <color name="txt">#022B3A</color>
+    <color name="txt2">#6F8AB7</color>
+    <color name="button_colour1">#BFDBF7</color>
+    <color name="button_colour2">#89BBFE</color>
+    <color name="light_button">#CAE5FF</color>
+    <color name="date_button">#648DE5</color>
+    <color name="dark_txt">#304C89</color>
 </resources>
